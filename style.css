@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --card-width: 28rem;
+  --card-height: 23rem;
+  --body-font: 0.9rem;
+  --h1-size: 1.8rem;
+  --avatar-size: 8rem;
+}
+body{
+  width: 100vw;
+  min-height: 100vh;
+  background: url(https://img.freepik.com/free-vector/dark-minimal-hexagons-background_79603-1455.jpg) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+main {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  filter: drop-shadow(0 40px 60px rgba(0, 0, 0, 0.808));
+}
+.left-card {
+  width: var(--card-width);
+  min-height: var(--card-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background: #303030;
+  /* padding: 3rem 0; */
+  border-radius: 2rem 2rem 0 0;
+}
+.left-card img {
+  width: var(--avatar-size);
+  border-radius: 50%;
+  filter: drop-shadow(0 10px 20px #00000094);
+  transition: 0.8s ease-in-out;
+}
+.left-card img:hover{
+  transform: scale(0.9) rotate(360deg);
+}
+.left-card h1 {
+  color: #fff;
+  margin-top: 1.6rem;
+  font-size: var(--h1-size);
+}
+.left-card p {
+  color: #cfcfcf;
+  margin-top: 0.6rem;
+  font-size: var(--body-font);
+  width: 98%;
+}
+.right-card {
+  width: var(--card-width);
+  min-height: var(--card-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background: #141414;
+  /* padding: 3rem 0; */
+  border-radius: 0 0 2rem 2rem;
+}
+.link:not(:nth-child(1)) {
+  margin-top: 2rem;
+}
+.link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s ease;
+  font-size: var(--body-font);
+}
+.link:hover {
+  transform: scale(1.1);
+}
+.link .iconify {
+  font-size: 1.6rem;
+  margin-right: 1.5rem;
+}
+
+/* @media screen and (max-width: 973px) {
+  :root {
+    --card-width: 46vw;
+  }
+}
+@media screen and (max-width: 654px) {
+  :root {
+    --card-height: 20rem;
+    --body-font: 0.9rem;
+    --h1-size: 1.4rem;
+    --avatar-size: 6rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  :root {
+    --card-width: 85vw;
+    --card-height: 20vh;
+  }
+  .card-container {
+    flex-direction: column;
+  }
+  .left-card {
+    border-radius: 2rem 2rem 0 0;
+  }
+  .right-card{
+    border-radius: 0 0 2rem 2rem;
+  }
+} */
